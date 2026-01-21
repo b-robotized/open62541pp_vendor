@@ -1,0 +1,1 @@
+find_package(open62541pp REQUIRED NO_MODULE)
