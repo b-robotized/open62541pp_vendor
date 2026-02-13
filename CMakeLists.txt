@@ -13,7 +13,7 @@ set(UAPP_INTERNAL_OPEN62541 ON CACHE BOOL "Use internal open62541" FORCE)
 # we're probably using it in .so files, so we need PIC
 set(CMAKE_POSITION_INDEPENDENT_CODE ON CACHE BOOL "Build with PIC" FORCE)
 
-set(UA_ENABLE_ENCRYPTION "MBEDTLS" CACHE STRING "Encryption provider" FORCE)
+set(UA_ENABLE_ENCRYPTION "OPENSSL" CACHE STRING "Encryption provider" FORCE)
 
 include(FetchContent)
 FetchContent_Declare(
